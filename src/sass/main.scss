@@ -1,3 +1,17 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+}
+
 h1 {
   text-align: center;
 }
@@ -19,8 +33,8 @@ label {
   display: block;
   margin-top: 0.5rem;
   width: 100%;
-  font-size: 1.6rem;
-  padding: 10px 12px;
+  font-size: 1.2rem;
+  padding: 5px 12px;
   font-weight: 400;
   line-height: 1.5;
   border-radius: 5px;
@@ -29,6 +43,11 @@ label {
   border: 1px solid #ced4da;
   outline: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &::placeholder {
+    opacity: 0.3;
+    font-size: 1rem;
+  }
 }
 
 textarea {
@@ -53,6 +72,11 @@ button {
   }
 }
 
-// "browserslist": [
-//   "last 10 versions"
-// ],
+label .req {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 5px;
+  display: inline-block;
+  // color: #000;
+}

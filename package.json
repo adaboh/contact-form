@@ -8,18 +8,11 @@
     "watch": "node-sass --watch src/sass -o src/css",
     "devServer": "live-server",
     "start": "npm-run-all --parallel devServer watch",
-    "compile": "node-sass  src/sass/main.scss src/css/compile.css ",
-    "concat-css": "concat -o src/css/concat.css src/css/lib.css src/css/compile.css",
-    "compress-css": "node-sass src/css/concat.css docs/css/main.css --output-style",
-    "build-css": "npm-run-all concat-css compress-css",
-    "copy-files": "cp src/index.html src/form.php docs/",
-    "deploy": "npm-run-all build-css copy-files"
+    "copy-files": "cp  src/index.html src/form.php -r src/css/ docs/"
   },
   "author": "Kae",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
-    "concat": "^1.0.3",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1"
   }
