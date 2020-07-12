@@ -16,7 +16,7 @@ label {
   display: block;
   margin-top: 0.5rem;
   width: 100%;
-  font-size: inherit;
+  font-size: 1.6rem;
   padding: 10px 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -29,7 +29,8 @@ label {
 
 textarea {
   width: 400px;
-  height: 200px; }
+  height: 200px;
+  font-size: inherit; }
 
 button {
   display: block;
