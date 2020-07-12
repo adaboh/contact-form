@@ -10,7 +10,7 @@
     "start": "npm-run-all --parallel devServer watch",
     "compile": "node-sass  src/sass/main.scss src/css/compile.css ",
     "concat-css": "concat -o src/css/concat.css src/css/lib.css src/css/compile.css",
-    "compress-css": "node-sass src/css/concat.css docs/css/main.css --output-style compressed",
+    "compress-css": "node-sass src/css/concat.css docs/css/main.css --output-style",
     "build-css": "npm-run-all concat-css compress-css",
     "copy-files": "cp src/index.html src/form.php docs/",
     "deploy": "npm-run-all build-css copy-files"
